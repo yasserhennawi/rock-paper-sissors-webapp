@@ -1,0 +1,13 @@
+{
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "compilerOptions": {
+    "jsx": "react"
+  },
+  "include": ["./src/**/*.ts"]
+}
