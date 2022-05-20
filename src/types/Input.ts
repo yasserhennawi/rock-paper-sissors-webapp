@@ -1,7 +1,7 @@
 enum Input {
-  Rock = "r",
-  Paper = "p",
-  Sissors = "s",
+  r = "Rock",
+  p = "Paper",
+  s = "Sissors",
 }
 
 export default Input;

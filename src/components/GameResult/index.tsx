@@ -3,11 +3,14 @@ import Result from "../../interfaces/Result";
 import VerticalSection from "./VerticalSection";
 import "./index.css";
 
-const GameResult = ({ player1, player2, winner }: Result) => {
+const GameResult = ({ result: { player1, player2, winner } }) => {
   return (
-    <div className="container">
-      <VerticalSection player={player1} isWinner={player1.input === winner} />
-      <VerticalSection player={player1} isWinner={player2.input === winner} />
+    <div className="results-container">
+      <div className="results">
+        <VerticalSection player={player1} isWinner={player1.code === winner} />
+        <VerticalSection player={player2} isWinner={player2.code === winner} />
+      </div>
+      {!winner && <div>Draw!</div>}
     </div>
   );
 };

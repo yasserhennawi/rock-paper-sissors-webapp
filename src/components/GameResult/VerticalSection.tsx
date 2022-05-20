@@ -1,7 +1,7 @@
 import React from "react";
 
 const VerticalSection = ({ player, isWinner }) => (
-  <div className="section">
+  <div className={`vertical-section ${isWinner && `winner`}`}>
     <h4>{player.name}</h4>
     <h4>{player.input}</h4>
   </div>
